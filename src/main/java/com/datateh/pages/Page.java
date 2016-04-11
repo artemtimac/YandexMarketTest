@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.interactions.*;
 import org.openqa.selenium.support.PageFactory;
 
-
 /**
  * Created by atugushev on 07.04.2016.
  */
@@ -18,6 +17,7 @@ public abstract class Page
     public static PhonesPage phonesPage;
     public static PhonesSearchPage phonesSearchPage;
     public static Apple5sPage apple5sPage;
+
     public static WebDriverWait wait;
     public static Actions action;
 

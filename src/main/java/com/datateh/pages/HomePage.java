@@ -2,7 +2,6 @@ package com.datateh.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
-
 /**
  * Created by atugushev on 07.04.2016.
  */
@@ -25,11 +24,11 @@ public class HomePage extends Page
     {
         switch (section.toLowerCase())
         {
-            case "market" :
+            case "market":
                 market.click();
                 marketPage = new MarketPage();
                 break;
-            default :
+            default:
                 System.out.println("Section doesn't exist!");
                 break;
         }
