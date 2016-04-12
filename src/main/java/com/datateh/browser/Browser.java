@@ -27,6 +27,7 @@ public class Browser
                     driver = new FirefoxDriver();
                     break;
                 case "chrome":
+                    System.setProperty("webdriver.chrome.driver","chromedriver.exe");
                     driver = new ChromeDriver();
                     break;
                 case "ie":
