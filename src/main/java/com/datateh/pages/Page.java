@@ -16,7 +16,7 @@ public abstract class Page
     public static MarketPage marketPage;
     public static PhonesPage phonesPage;
     public static PhonesSearchPage phonesSearchPage;
-    public static Apple5sPage apple5sPage;
+    public static PhonePage phonePage;
 
     public static WebDriverWait wait;
     public static Actions action;
