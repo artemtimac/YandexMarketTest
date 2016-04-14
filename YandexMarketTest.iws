@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45d860cc-4613-474f-95c4-2ef54730887f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YandexMarketTest.iml" afterPath="$PROJECT_DIR$/YandexMarketTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YandexMarketTest.ipr" afterPath="$PROJECT_DIR$/YandexMarketTest.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YandexMarketTest.iws" afterPath="$PROJECT_DIR$/YandexMarketTest.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="45d860cc-4613-474f-95c4-2ef54730887f" name="Default" comment="" />
     <ignored path="YandexMarketTest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -859,7 +854,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
