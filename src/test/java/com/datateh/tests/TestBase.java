@@ -10,7 +10,8 @@ import org.junit.*;
 public abstract class TestBase
 {
     @After
-    public void tearDown() {
+    public void tearDown()
+    {
         Browser.getDriver().close();
     }
 }
