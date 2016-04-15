@@ -65,6 +65,11 @@ public class PhonesSearchPage extends Page
         System.out.println(phones + text);
     }
 
+    private void rememberFirstPhoneName()
+    {
+        firstPhoneName = wait.until(ExpectedConditions.visibilityOf(firstPhone)).getText();
+    }
+
     public void fillForm()
     {
         priceFrom.sendKeys("35000");
@@ -73,16 +78,16 @@ public class PhonesSearchPage extends Page
         printCount(counter, " phones from 35000 rub and from 3 inches");
         appleBox.click();
         printCount(counter, " of them - Apple phones");
+        rememberFirstPhoneName();
     }
 
     public void sortBy(String filter) throws Exception
     {
-        firstPhoneName = wait.until(ExpectedConditions.visibilityOf(firstPhone)).getText();
         switch (filter.toLowerCase())
         {
             case "novelty" :
                 byNovelty.click();
-                Thread.sleep(1500);
+                Thread.sleep(1000);
                 break;
             default :
                 System.out.println("Filter doesn't exist!");
@@ -90,7 +95,7 @@ public class PhonesSearchPage extends Page
         }
     }
 
-    public void openMostPopular()
+    public void findMostPopular()
     {
         try
         {
@@ -102,9 +107,8 @@ public class PhonesSearchPage extends Page
         }
         catch (Exception e)
         {
-            page++;
-            openPage(page);
-            openMostPopular();
+            openPage(++page);
+            findMostPopular();
         }
     }
 }
