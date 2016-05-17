@@ -1,5 +1,6 @@
 package com.datateh.pages;
 
+import com.datateh.utils.WebDriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 /**
@@ -16,7 +17,7 @@ public class HomePage extends Page
 
     public static void open()
     {
-        getDriver().get(URL);
+        WebDriverManager.getDriver().get(URL);
         homePage = new HomePage();
     }
 

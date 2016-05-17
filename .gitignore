@@ -1,2 +1,4 @@
 target
-chromedriver.exe
+*.ipr
+*.iws
+*.iml

@@ -4,7 +4,7 @@ package com.datateh.tests;
  * Created by atugushev on 04.04.2016.
  */
 
-import org.junit.*;
+import org.testng.annotations.*;
 import com.datateh.pages.*;
 
 public class YandexTest extends TestBase

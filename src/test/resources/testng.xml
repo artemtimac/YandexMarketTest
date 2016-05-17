@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="YandexMarketTest" parallel="tests" thread-count="5">
+    <test name="FirefoxTest" verbose="1">
+        <parameter name="browserName" value="firefox" />
+        <parameter name="browserVersion" value="" />
+        <classes>
+            <class name="com.datateh.tests.YandexTest" />
+        </classes>
+    </test>
+    <test name="ChromeTest" verbose="1">
+        <parameter name="browserName" value="chrome" />
+        <parameter name="browserVersion" value="" />
+        <classes>
+            <class name="com.datateh.tests.YandexTest" />
+        </classes>
+    </test>
+</suite>  

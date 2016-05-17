@@ -1,5 +1,6 @@
 package com.datateh.pages;
 
+import com.datateh.utils.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.ui.*;
@@ -57,9 +58,10 @@ public class PhonesSearchPage extends Page
         }
     }
 
-    private void printCount(WebElement counter, String text)
+    private void printCount(WebElement counter, String text) throws Exception
     {
         applyButton.click();
+        Thread.sleep(1500);
         String counterText = wait.until(ExpectedConditions.visibilityOf(counter)).getText();
         int phones = Integer.parseInt(counterText.substring(0, counterText.indexOf(" ")));
         System.out.println(phones + text);
@@ -70,7 +72,7 @@ public class PhonesSearchPage extends Page
         firstPhoneName = wait.until(ExpectedConditions.visibilityOf(firstPhone)).getText();
     }
 
-    public void fillForm()
+    public void fillForm() throws Exception
     {
         priceFrom.sendKeys("35000");
         diagonalForm.click();
@@ -99,7 +101,7 @@ public class PhonesSearchPage extends Page
     {
         try
         {
-            getDriver()
+            WebDriverManager.getDriver()
                     .findElement(By.xpath(String.format("//*[@title = '%s']", firstPhoneName)))
                     .click();
             System.out.println(firstPhoneName + " is most popular");

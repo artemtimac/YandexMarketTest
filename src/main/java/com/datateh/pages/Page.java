@@ -1,6 +1,7 @@
 package com.datateh.pages;
 
-import com.datateh.browser.Browser;
+import com.datateh.utils.WebDriverFactory;
+import com.datateh.utils.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.*;
 import org.openqa.selenium.interactions.*;
@@ -23,10 +24,6 @@ public abstract class Page
 
     public Page()
     {
-        PageFactory.initElements(getDriver(), this);
-    }
-
-    public static WebDriver getDriver() {
-        return Browser.getDriver();
+        PageFactory.initElements(WebDriverManager.getDriver(), this);
     }
 }
